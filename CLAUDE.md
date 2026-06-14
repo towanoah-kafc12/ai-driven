@@ -16,21 +16,21 @@
 
 例:
 
-- `docs/00_idea.md`
-- `docs/01_implementation/auth_implementation.md`
-- `docs/02_pending/auth_pending.md`
-- `docs/03_decision/auth_decision.md`
-- `docs/04_review/auth_review.md`
+- `docs/00_base/00_idea.md`
+- `docs/00_base/01_implementation.md`
+- `docs/01_pending/auth_pending.md`
+- `docs/02_decision/auth_decision.md`
+- `docs/03_review/auth_review.md`
 
-### docs/00_idea
+### docs/00_base/00_idea.md
 
-アイデアだけの状態から、目的、想定ユーザ、MVP、非目標、成功条件を整理し、実装に進める粒度まで詳細化するための記録を置きます。
+アイデアだけの状態から、目的、想定ユーザ、MVP、非目標、成功条件を整理し、実装に進める粒度まで詳細化するためのテンプレートです。
 
-### docs/01_implementation
+### docs/00_base/01_implementation.md
 
-使う技術、設計方針、実装方針、実装スコープ、テスト方針をある程度確定させ、実装時に参照できる状態で保存します。
+使う技術、設計方針、実装方針、実装スコープ、テスト方針をある程度確定させ、実装時に参照できる状態で保存するためのテンプレートです。
 
-### docs/02_pending
+### docs/01_pending
 
 不明点、情報不足、ユーザ確認が必要な事項、調査待ちの事項を記録します。
 
@@ -50,7 +50,7 @@
 2. ファイル下部に `## <項番>: <タイトル>` のセクションを作り、内容、対応方針、補足情報を Markdown 形式で詳述する。
 3. 対応方針が未定の場合は空欄でもよいが、状態は必ず明記する。
 
-### docs/03_decision
+### docs/02_decision
 
 エージェントとユーザの対話で決定したこと、新たに判明した重要情報、判断理由、設計上の前提を記録します。
 
@@ -67,7 +67,7 @@
 2. セクション内に項番、内容、判断理由を含める。
 3. 対応が必要なファイル、関連情報、代替案、影響範囲がある場合は、必要に応じて小セクションを追加する。
 
-### docs/04_review
+### docs/03_review
 
 エージェントのレビュー結果、ユーザからの追加指摘、未対応の改善指摘を記録します。
 
@@ -91,9 +91,9 @@
 作業時には以下の事項を確認しつつ作業することを厳守する。
 
 - 作業開始前に `AGENTS.md` / `CLAUDE.md` / `MEMO.md` を確認する。
-- 関連する `docs/00_idea` / `docs/01_implementation` の前提と方針を確認する。
-- 関連する `docs/02_pending` の未解決事項を確認する。
-- 関連する `docs/03_decision` の決定事項を確認する。
-- 関連する `docs/04_review` の未対応指摘を確認する。
+- 関連する `docs/00_base/00_idea.md` / `docs/00_base/01_implementation.md` の前提と方針を確認する。
+- 関連する `docs/01_pending` の未解決事項を確認する。
+- 関連する `docs/02_decision` の決定事項を確認する。
+- 関連する `docs/03_review` の未対応指摘を確認する。
 - 新しい不明点、決定、レビュー指摘が発生した場合、該当するファイルに記録する。
 - `AGENTS.md` を変更した場合、`CLAUDE.md` にも同じ内容を反映する。
